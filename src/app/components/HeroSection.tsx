@@ -1,4 +1,5 @@
-import { Box, Button, Container, TextField, Typography, MenuItem} from "@mui/material";
+"use Client";
+import { Box, Button, Container, TextField, Typography} from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import HeroImage from "../../assets/PNG/herosection.png";
 import Image from "next/image";
@@ -15,7 +16,7 @@ export default function HeroSection() {
         py: { xs: 4, md: 8 },}}>
         <Container maxWidth="xl">
             <Grid container spacing={4} alignItems="center">
-            <Grid item xs={5} >
+            <Grid item xs={6} >
               <Typography variant="h3" sx={{ fontWeight: "bold"}}>
               We Help You Find <br /> Your Dream Job
                 </Typography>
@@ -51,12 +52,12 @@ export default function HeroSection() {
               >
 
               </TextField>
-              <Button variant="contained" size="large" >
+              <Button variant="contained" size="small" >
                 Search Job
               </Button>
             </Box>
             </Grid>
-            <Grid item xs={7} sx={{ textAlign: "center", display: "flex", justifyContent: "end"}}>
+            <Grid item xs={6} sx={{ textAlign: "center", display: "flex", justifyContent: "end"}}>
               <Image
                 src={HeroImage}
                 alt="Hero Image"
