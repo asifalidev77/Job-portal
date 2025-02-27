@@ -4,8 +4,10 @@ import {
   TextField,
   Typography,
   InputAdornment,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2";
 import SearchIcon from "@mui/icons-material/Search";
 export default function Footer() {
   return (
@@ -17,71 +19,139 @@ export default function Footer() {
           pt: "150px",
           px: "163px",
           container: "xl",
+          width: "100%",
+          display: "flex",
         }}
       >
-        <Typography
-          variant="h6"
-          sx={{ color: "white", fontWeight: "bold", fontSize: "36px" }}
-        >
-          Logo
-        </Typography>
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-          <TextField
-            sx={{
-              input: {
-                color: "white", // Text color
-                "::placeholder": { color: "white", opacity: 1 }, // Placeholder color
-              },
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "white", // Default border color
-                },
-                "&:hover fieldset": {
-                  borderColor: "white", // Border color on hover
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "white", // Border color when focused
-                },
-              },
-            }}
-            fullWidth
-            placeholder="EmailAddress"
-            variant="outlined"
-            size="small"
-            slotProps={{
-              input: {
-                startAdornment: (
-                  <InputAdornment position="start" sx={{ color: "white" }}>
-                    <SearchIcon />
-                  </InputAdornment>
-                ),
-              },
-            }}
-          />
-          <Button
-            sx={{
-              backgroundColor: "#FF601B",
-              color: "#fff",
-              py: "16px",
-              px: "30px",
-            }}
-            size="small"
+        <Box sx={{ width: "60%" }}>
+          <Typography
+            variant="h6"
+            sx={{ color: "white", fontWeight: "bold", fontSize: "36px" }}
           >
-            Subscribe
-          </Button>
+            Logo
+          </Typography>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+            <TextField
+              sx={{
+                input: {
+                  color: "white", // Text color
+                  "::placeholder": { color: "white", opacity: 1 }, // Placeholder color
+                },
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "white", // Default border color
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "white", // Border color on hover
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "white", // Border color when focused
+                  },
+                },
+              }}
+              fullWidth
+              placeholder="EmailAddress"
+              variant="outlined"
+              size="small"
+              slotProps={{
+                input: {
+                  startAdornment: (
+                    <InputAdornment position="start" sx={{ color: "white" }}>
+                      <SearchIcon />
+                    </InputAdornment>
+                  ),
+                },
+              }}
+            />
+            <Button
+              sx={{
+                backgroundColor: "#FF601B",
+                color: "#fff",
+                py: "16px",
+                px: "30px",
+              }}
+              size="small"
+            >
+              Subscribe
+            </Button>
+          </Box>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "white",
+              fontSize: "24px",
+              fontWeight: "normal",
+              fontFamily: "Plus Jakarta Sans",
+            }}
+          >
+            We build startups from zero
+          </Typography>
+          <Box sx={{ display: "flex", gap: 4 }}>
+            <Box>
+              <Typography
+                component="p"
+                variant="body1"
+                sx={{
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "20px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                Contact Us
+              </Typography>
+              <Typography
+                component="p"
+                variant="body1"
+                sx={{
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "18px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                jobportal@example.com <br />
+                +012-324-545-66
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                component="p"
+                variant="body1"
+                sx={{
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "20px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                Location
+              </Typography>
+              <Typography
+                component="p"
+                variant="body1"
+                sx={{
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "18px",
+                  fontFamily: "Plus Jakarta Sans",
+                }}
+              >
+                St. Gangnam Uhuy, 8329 NYC
+              </Typography>
+            </Box>
+          </Box>
         </Box>
-        <Typography
-          variant="body1"
+        <Box
           sx={{
-            color: "white",
-            fontSize: "24px",
-            fontWeight: "normal",
-            fontFamily: "Plus Jakarta Sans",
+            display: "flex",
+            flexDirection: "row",
+            gap: 4,
+            alignItems: "center",
+            width: "40%",
+            justifyContent: "space-between",
           }}
         >
-          We build startups from zero
-        </Typography>
-        <Box sx={{ display: "flex", gap: 4 }}>
           <Box>
             <Typography
               component="p"
@@ -93,21 +163,32 @@ export default function Footer() {
                 fontFamily: "Plus Jakarta Sans",
               }}
             >
-              Contact Us
+              Company
             </Typography>
-            <Typography
-              component="p"
-              variant="body1"
-              sx={{
-                color: "white",
-                fontWeight: "normal",
-                fontSize: "18px",
-                fontFamily: "Plus Jakarta Sans",
-              }}
-            >
-              jobportal@example.com <br />
-              +012-324-545-66
-            </Typography>
+            <List sx={
+                {
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "18px",
+                  fontFamily: "Plus Jakarta Sans",
+                 
+              }} >
+              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us"  />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+                <ListItemText primary="Why Portal" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Testimonial" />
+              </ListItem >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Promotions" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Forum" />
+              </ListItem>
+            </List>
           </Box>
           <Box>
             <Typography
@@ -120,23 +201,78 @@ export default function Footer() {
                 fontFamily: "Plus Jakarta Sans",
               }}
             >
-              Location
+              Help
             </Typography>
+            <List sx={
+                {
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "18px",
+                  fontFamily: "Plus Jakarta Sans",
+                 
+              }} >
+              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us"  />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+                <ListItemText primary="Why Portal" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Testimonial" />
+              </ListItem >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Promotions" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Forum" />
+              </ListItem>
+            </List>
+          </Box>
+          <Box>
             <Typography
               component="p"
               variant="body1"
               sx={{
                 color: "white",
                 fontWeight: "normal",
-                fontSize: "18px",
+                fontSize: "20px",
                 fontFamily: "Plus Jakarta Sans",
               }}
             >
-              St. Gangnam Uhuy, 8329 NYC
+              Jobs
             </Typography>
+            <List sx={
+                {
+                  color: "white",
+                  fontWeight: "normal",
+                  fontSize: "18px",
+                  fontFamily: "Plus Jakarta Sans",
+                 
+              }} >
+              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us"  />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+                <ListItemText primary="Why Portal" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Testimonial" />
+              </ListItem >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Promotions" />
+              </ListItem>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="Forum" />
+              </ListItem>
+            </List>
           </Box>
         </Box>
       </Box>
+<Box  sx={{backgroundColor: "#0F0F0F", height: "10vh", display: "flex", justifyContent: "center", alignItems: "center", container: "xl", width: "100%"}}>
+  <Typography variant="body1" sx={{color: "white", fontWeight: "normal", fontSize: "15px", fontFamily: "Plus Jakarta Sans"}}>
+  © 2022 Job Portal. All Rights Reserved. With love by Elmous
+  </Typography>
+</Box>
     </>
   );
 }
