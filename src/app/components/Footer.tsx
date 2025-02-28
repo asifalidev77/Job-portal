@@ -30,7 +30,7 @@ export default function Footer() {
           >
             Logo
           </Typography>
-          <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "center", width: "70%" , border: "1px solid white", borderColor: "white", borderRadius: "5px",padding: "5px" }}>
             <TextField
               sx={{
                 input: {
@@ -39,18 +39,18 @@ export default function Footer() {
                 },
                 "& .MuiOutlinedInput-root": {
                   "& fieldset": {
-                    borderColor: "white", // Default border color
+                    borderColor: "#0575E6", // Default border color
                   },
                   "&:hover fieldset": {
-                    borderColor: "white", // Border color on hover
+                    borderColor: "#0575E6", // Border color on hover
                   },
                   "&.Mui-focused fieldset": {
-                    borderColor: "white", // Border color when focused
+                    borderColor: "#0575E6", // Border color when focused
                   },
                 },
               }}
               fullWidth
-              placeholder="EmailAddress"
+              placeholder="Email Address"
               variant="outlined"
               size="small"
               slotProps={{
@@ -147,7 +147,7 @@ export default function Footer() {
             display: "flex",
             flexDirection: "row",
             gap: 4,
-            alignItems: "center",
+            
             width: "40%",
             justifyContent: "space-between",
           }}
@@ -165,23 +165,23 @@ export default function Footer() {
             >
               Company
             </Typography>
-            <List sx={
-                {
-                  color: "white",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Plus Jakarta Sans",
-                 
-              }} >
-              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
-                <ListItemText primary="About Us"  />
+            <List
+              sx={{
+                color: "white",
+                fontWeight: "normal",
+                fontSize: "18px",
+                fontFamily: "Plus Jakarta Sans",
+              }}
+            >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us" />
               </ListItem>
-              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Why Portal" />
               </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Testimonial" />
-              </ListItem >
+              </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Promotions" />
               </ListItem>
@@ -203,23 +203,23 @@ export default function Footer() {
             >
               Help
             </Typography>
-            <List sx={
-                {
-                  color: "white",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Plus Jakarta Sans",
-                 
-              }} >
-              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
-                <ListItemText primary="About Us"  />
+            <List
+              sx={{
+                color: "white",
+                fontWeight: "normal",
+                fontSize: "18px",
+                fontFamily: "Plus Jakarta Sans",
+              }}
+            >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us" />
               </ListItem>
-              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Why Portal" />
               </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Testimonial" />
-              </ListItem >
+              </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Promotions" />
               </ListItem>
@@ -241,23 +241,23 @@ export default function Footer() {
             >
               Jobs
             </Typography>
-            <List sx={
-                {
-                  color: "white",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Plus Jakarta Sans",
-                 
-              }} >
-              <ListItem  sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
-                <ListItemText primary="About Us"  />
+            <List
+              sx={{
+                color: "white",
+                fontWeight: "normal",
+                fontSize: "18px",
+                fontFamily: "Plus Jakarta Sans",
+              }}
+            >
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
+                <ListItemText primary="About Us" />
               </ListItem>
-              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0  }}>
+              <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Why Portal" />
               </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Testimonial" />
-              </ListItem >
+              </ListItem>
               <ListItem sx={{ paddingLeft: 0, paddingY: 0, marginY: 0 }}>
                 <ListItemText primary="Promotions" />
               </ListItem>
@@ -268,11 +268,29 @@ export default function Footer() {
           </Box>
         </Box>
       </Box>
-<Box  sx={{backgroundColor: "#0F0F0F", height: "10vh", display: "flex", justifyContent: "center", alignItems: "center", container: "xl", width: "100%"}}>
-  <Typography variant="body1" sx={{color: "white", fontWeight: "normal", fontSize: "15px", fontFamily: "Plus Jakarta Sans"}}>
-  © 2022 Job Portal. All Rights Reserved. With love by Elmous
-  </Typography>
-</Box>
+      <Box
+        sx={{
+          backgroundColor: "#0F0F0F",
+          height: "10vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          container: "xl",
+          width: "100%",
+        }}
+      >
+        <Typography
+          variant="body1"
+          sx={{
+            color: "white",
+            fontWeight: "normal",
+            fontSize: "15px",
+            fontFamily: "Plus Jakarta Sans",
+          }}
+        >
+          © 2022 Job Portal. All Rights Reserved. With love by Elmous
+        </Typography>
+      </Box>
     </>
   );
 }

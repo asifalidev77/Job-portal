@@ -50,7 +50,6 @@ export default function HeroSection() {
                 variant="outlined"
                 size="small"
               >
-
               </TextField>
               <Button variant="contained" size="small" >
                 Search Job
