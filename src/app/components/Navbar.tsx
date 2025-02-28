@@ -16,7 +16,7 @@ export default function Navbar() {
         position="static"
         sx={{ backgroundColor: "white", color: "black", boxShadow: "none" }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <Typography
               variant="h6"

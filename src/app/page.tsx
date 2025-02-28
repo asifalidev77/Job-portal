@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import JobCategories from './components/JobCategories';
 import { Grid, Container , Box, Typography, Button
 } from "@mui/material";
+import JoinOurTeam from './components/JoinOurTeam';
 import {
   Brush,
   Code,
@@ -36,13 +37,15 @@ export default function Home() {
                 </Typography>
                 
           </Box>
-      <Grid container spacing={3} justifyContent="center">
+         
+      <Grid container component={Container} maxWidth="xl" spacing={3} justifyContent="center">
         {jobList.map((job, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <JobCategories title={job.title} positions={job.positions} icon={job.icon} />
           </Grid>
         ))}
       </Grid>
+      
       <Box sx={{ display: "flex", justifyContent: "center", my: 5 }}>
       <Button
         variant="contained"
@@ -56,6 +59,7 @@ export default function Home() {
         </Button>
         </Box>
     </Container>
+    <JoinOurTeam/>
     <Footer/>
     </>
   );

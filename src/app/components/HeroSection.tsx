@@ -14,7 +14,7 @@ export default function HeroSection() {
         flexWrap: "nowrap",
         alignItems: "center",
         py: { xs: 4, md: 8 },}}>
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
             <Grid container spacing={4} alignItems="center">
             <Grid item xs={6} >
               <Typography variant="h3" sx={{ fontWeight: "bold"}}>
@@ -60,8 +60,8 @@ export default function HeroSection() {
               <Image
                 src={HeroImage}
                 alt="Hero Image"
-                width={749}
-                height={652}
+                width={500}
+                height={500}
               />
             </Grid>
             
