@@ -5,6 +5,7 @@ import JobCategories from './components/JobCategories';
 import { Grid, Container , Box, Typography, Button
 } from "@mui/material";
 import JoinOurTeam from './components/JoinOurTeam';
+import ExploreCompanies from './components/ExploreCompanies';
 import {
   Brush,
   Code,
@@ -59,6 +60,7 @@ export default function Home() {
         </Button>
         </Box>
     </Container>
+    <ExploreCompanies/>
     <JoinOurTeam/>
     <Footer/>
     </>
