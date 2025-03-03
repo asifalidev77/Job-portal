@@ -18,14 +18,24 @@ export default function HeroSection() {
             gap: { xs: 4, md: 0 },
           }}
         >
-          <Box sx={{ width: { xs: "100%", md: "45%" },
-            textAlign: "left",
-            px: { xs: 2, md: 0 },
-             }}>
-            <Typography variant="h3" sx={{ fontWeight: "bold", fontSize: { xs: "2rem", md: "3rem" }, }}>
+          <Box
+            sx={{
+              width: { xs: "100%", md: "45%" },
+              textAlign: "left",
+              px: { xs: 2, md: 0 },
+            }}
+          >
+            <Typography
+              variant="h3"
+              sx={{ fontWeight: "bold", fontSize: { xs: "2rem", md: "3rem" } }}
+            >
               We Help You Find Your Dream Job
             </Typography>
-            <Typography variant="body1" color="text.secondary" sx={{ my: 3, fontSize: { xs: "14px", md: "16px" } }}>
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{ my: 3, fontSize: { xs: "14px", md: "16px" } }}
+            >
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Quis autem vel eum iure reprehenderit qui in ea voluptate.
             </Typography>
@@ -47,7 +57,7 @@ export default function HeroSection() {
                 label="Job Title or Company"
                 variant="outlined"
                 size="small"
-                sx={{ fontSize:"20px" }}
+                sx={{ fontSize: "20px" }}
               />
               <TextField
                 fullWidth
@@ -55,21 +65,26 @@ export default function HeroSection() {
                 label="Select Country"
                 variant="outlined"
                 size="small"
-                
               ></TextField>
               <Button
                 variant="contained"
                 size="small"
                 sx={{
                   py: "8px",
-                  width: { xs: "100%", },
+                  width: { xs: "100%" },
                 }}
               >
                 Search Job
               </Button>
             </Box>
           </Box>
-          <Box sx={{ width: { xs: "100%", md: "50%" }, display: "flex", justifyContent: "end" }}>
+          <Box
+            sx={{
+              width: { xs: "100%", md: "50%" },
+              display: "flex",
+              justifyContent: "end",
+            }}
+          >
             <Image
               src={HeroImage}
               alt="Hero Image"
