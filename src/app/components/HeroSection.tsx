@@ -59,7 +59,6 @@ export default function HeroSection() {
               />
               <TextField
                 fullWidth
-                select
                 label="Select Country"
                 variant="outlined"
                 size="small"

@@ -85,7 +85,6 @@ export default function Home() {
             </Grid>
           ))}
         </Grid>
-
         <Box sx={{ display: "flex", justifyContent: "center", my: 5 }}>
           <Button
             variant="contained"
@@ -157,10 +156,9 @@ export default function Home() {
           ))}
         </Box>
       </Container>
-
       <ExploreCompanies />
       <JoinOurTeam />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

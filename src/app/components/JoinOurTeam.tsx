@@ -27,10 +27,11 @@ export default function JoinOurTeam() {
             }}
           >
             <Image src={Team} alt="Team" layout="fill" objectFit="cover" />
+
           </Box>
           <Box sx={{ width: { xs: "100%", md: "50%" }, }}>
             <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
-              Begin Your New Journey <br /> With Us
+              Begin Your New Journey  With Us
             </Typography>
             <Typography variant="body1" color="text.secondary" mb={3}>
               On the other hand, we denounce with righteous indignation and

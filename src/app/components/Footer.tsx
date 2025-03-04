@@ -7,30 +7,38 @@ import {
   List,
   ListItem,
   ListItemText,
+  Container
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 export default function Footer() {
   return (
-    <>
+<>      
+    <Box
+      sx={{
+        backgroundColor: "#0575E6",
+      }}>
+    <Container maxWidth="lg"
+  >
       <Box
         sx={{
-          backgroundColor: "#0575E6",
-          height: "50vh",
-          pt: "150px",
-          px: "163px",
-          container: "xl",
+          py:"150px",
           width: "100%",
+          justifyContent:"center",
+          alignContent:"center",
+          alignItems:"center",
           display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          gap: 5,
         }}
       >
-        <Box sx={{ width: "60%" }}>
+        <Box sx={{ width: { xs: "100%", md: "60%" },}}>
           <Typography
             variant="h6"
-            sx={{ color: "white", fontWeight: "bold", fontSize: "36px" }}
+            sx={{ color: "white", fontWeight: "bold", fontSize: "36px", mb:3 }}
           >
             Logo
           </Typography>
-          <Box sx={{ display: "flex", gap: 2, alignItems: "center", width: "70%" , border: "1px solid white", borderColor: "white", borderRadius: "5px",padding: "5px" }}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "center", width: "70%" , border: "1px solid white", borderColor: "white", borderRadius: "5px",padding: "5px" , mb:3}}>
             <TextField
               sx={{
                 input: {
@@ -82,6 +90,7 @@ export default function Footer() {
               fontSize: "24px",
               fontWeight: "normal",
               fontFamily: "Plus Jakarta Sans",
+               mb:3,
             }}
           >
             We build startups from zero
@@ -96,6 +105,7 @@ export default function Footer() {
                   fontWeight: "normal",
                   fontSize: "20px",
                   fontFamily: "Plus Jakarta Sans",
+                   mb:3,
                 }}
               >
                 Contact Us
@@ -123,6 +133,7 @@ export default function Footer() {
                   fontWeight: "normal",
                   fontSize: "20px",
                   fontFamily: "Plus Jakarta Sans",
+                  mb:3,
                 }}
               >
                 Location
@@ -148,8 +159,8 @@ export default function Footer() {
             flexDirection: "row",
             gap: 4,
             
-            width: "40%",
-            justifyContent: "space-between",
+            width: { xs: "100%", md: "50%" },
+                        justifyContent: "space-between",
           }}
         >
           <Box>
@@ -268,6 +279,9 @@ export default function Footer() {
           </Box>
         </Box>
       </Box>
+
+      </Container>
+      </Box>
       <Box
         sx={{
           backgroundColor: "#0F0F0F",
@@ -286,6 +300,7 @@ export default function Footer() {
             fontWeight: "normal",
             fontSize: "15px",
             fontFamily: "Plus Jakarta Sans",
+            textAlign: "center"
           }}
         >
           © 2022 Job Portal. All Rights Reserved. With love by Elmous
