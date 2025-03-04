@@ -26,6 +26,7 @@ import {
   BusinessCenter,
   Calculate,
 } from "@mui/icons-material";
+import WhyChooseUs from "./components/WhyChooseUs";
 const jobList = [
   { title: "UI/UX Designer", positions: 49, icon: <Brush fontSize="large" /> },
   { title: "Programmer", positions: 159, icon: <Code fontSize="large" /> },
@@ -157,6 +158,7 @@ export default function Home() {
         </Box>
       </Container>
       <ExploreCompanies />
+      <WhyChooseUs/>
       <JoinOurTeam />
       <Footer />
     </>
