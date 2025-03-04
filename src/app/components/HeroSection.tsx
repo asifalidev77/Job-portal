@@ -1,7 +1,5 @@
 "use Client";
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
-import HeroImage from "../../assets/PNG/herosection.png";
-import Image from "next/image";
 export default function HeroSection() {
   return (
     <>
@@ -85,13 +83,14 @@ export default function HeroSection() {
               justifyContent: "end",
             }}
           >
-            <Image
+            {/* <Image
               src={HeroImage}
               alt="Hero Image"
-              width={888}
-              height={847}
+              width={500}
+              height={500}
               objectFit="contain"
-            />
+            /> */}
+            <img src="/herosection.png" alt="" />
           </Box>
         </Box>
       </Container>

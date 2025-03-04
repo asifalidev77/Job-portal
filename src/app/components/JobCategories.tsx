@@ -1,8 +1,6 @@
 import {
-    Button,
     Box,
     Typography,
-    Container,
   } from "@mui/material";
   import { ReactElement } from "react";
   interface jobProps {
@@ -25,7 +23,7 @@ import {
         boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
         cursor: "pointer",
         transition: "0.3s",
-        width: { xs: "100%", sm: "280px", md: "250px" }, // Responsive width
+        width: { xs: "100%", sm: "100%", md: "250px" }, // Responsive width
         "&:hover": { boxShadow: "0 6px 15px rgba(0, 0, 0, 0.15)" },
       }}
       >

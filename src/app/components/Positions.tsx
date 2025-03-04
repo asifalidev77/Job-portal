@@ -21,7 +21,7 @@ const Positions: React.FC<JobCardProps> = ({
     <>
       <Box
         sx={{
-          width: { xs: "100%", md: "32%" },
+          width: { xs: "100%", md: "30%" },
           padding: 3,
           borderRadius: 3,
           border: isSelected ? "1px solid blue" : "none",

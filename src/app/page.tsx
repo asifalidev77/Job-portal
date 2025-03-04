@@ -160,7 +160,7 @@ export default function Home() {
 
       <ExploreCompanies />
       <JoinOurTeam />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -1,5 +1,4 @@
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { Box, Button, Container,  Typography } from "@mui/material";
 import Image from "next/image";
 import Company1 from "../../assets/SVG/Frame 1979.svg";
 import Company2 from "../../assets/SVG/Frame 1969.svg";
@@ -17,13 +16,14 @@ export default function ExploreCompanies() {
             flexWrap: "nowrap",
             alignItems: "center",
             justifyContent: "space-between",
-            flexDirection: "row",
+            flexDirection: { xs: "column", md: "row" },
+            gap: 5,
             mt: 5,
             mb: 5,
             width: "100%",
           }}
         >
-          <Box sx={{ width: "50%" }}>
+          <Box sx={{  width: { xs: "100%", md: "50%" }, }}>
             <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
             Job By Browsing World Best Companies
             </Typography>
@@ -45,10 +45,46 @@ export default function ExploreCompanies() {
               Browse All Companies
             </Button>
           </Box>
-          <Box sx={{ width: "50%", display: "flex", flexDirection: "column", justifyItems: "end", gap: 2 }}>
+          <Box sx={{  width: { xs: "100%", md: "50%" }, display: "flex", flexDirection: "column", justifyItems: "end", gap: 2 }}>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2, justifyContent: "end", }}>
+            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%" }}>
+                <Image src={Company1} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
+                <Typography variant="h6" fontWeight={600}>
+                Corporate
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                159 Open Position
+                </Typography>
+            </Box>
+            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%" }}>
+                <Image src={Company2} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
+                <Typography variant="h6" fontWeight={600}>
+                Corporate
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                159 Open Position
+                </Typography>
+            </Box><Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%" }}>
+                <Image src={Company3} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
+                <Typography variant="h6" fontWeight={600}>
+                Corporate
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                159 Open Position
+                </Typography>
+            </Box>
+            </Box>
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2, justifyContent: "end" }}>
-            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company1} alt="Company01" width={100} height={100} />
+            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%", }}>
+                <Image src={Company4} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
                 <Typography variant="h6" fontWeight={600}>
                 Corporate
                 </Typography>
@@ -56,44 +92,20 @@ export default function ExploreCompanies() {
                 159 Open Position
                 </Typography>
             </Box>
-            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company2} alt="Company01" width={100} height={100} />
+            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%" }}>
+                <Image src={Company5} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
                 <Typography variant="h6" fontWeight={600}>
                 Corporate
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                 159 Open Position
                 </Typography>
-            </Box><Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company3} alt="Company01" width={100} height={100} />
-                <Typography variant="h6" fontWeight={600}>
-                Corporate
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                159 Open Position
-                </Typography>
-            </Box>
-            </Box>
-            <Box sx={{ display: "flex", flexDirection: "row", gap: 2, justifyContent: "end" }}>
-            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company4} alt="Company01" width={100} height={100} />
-                <Typography variant="h6" fontWeight={600}>
-                Corporate
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                159 Open Position
-                </Typography>
-            </Box>
-            <Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company5} alt="Company01" width={100} height={100} />
-                <Typography variant="h6" fontWeight={600}>
-                Corporate
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                159 Open Position
-                </Typography>
-            </Box><Box sx={{ textAlign: "center", p: 2, boxShadow: 2 }}>
-                <Image src={Company6} alt="Company01" width={100} height={100} />
+            </Box><Box sx={{ textAlign: "center", p: 2, boxShadow: 2, width: "33%" }}>
+                <Image src={Company6} alt="Company01" width={100} height={100} 
+                style={{ margin: "auto" }}
+                />
                 <Typography variant="h6" fontWeight={600}>
                 Corporate
                 </Typography>

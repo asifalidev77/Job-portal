@@ -1,6 +1,8 @@
 "use client";
 import { Box, Grid, Typography, Paper, TextField, useMediaQuery, useTheme ,Container} from "@mui/material";
 import { FC } from "react";
+import React from "react";
+
 interface Step {
   number: string;
   title: string;

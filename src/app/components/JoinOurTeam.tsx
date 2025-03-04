@@ -11,7 +11,8 @@ export default function JoinOurTeam() {
             flexWrap: "nowrap",
             alignItems: "center",
             justifyContent: "space-between",
-            flexDirection: "row",
+            flexDirection: { xs: "column-reverse", md: "row" },
+            gap: 5,
             mt: 5,
             mb: 5,
             height: "546px",
@@ -19,7 +20,7 @@ export default function JoinOurTeam() {
         >
           <Box
             sx={{
-              width: "50%",
+              width: { xs: "100%", md: "50%" },
               height: "546px",
               display: "flex",
               position: "relative",
@@ -27,7 +28,7 @@ export default function JoinOurTeam() {
           >
             <Image src={Team} alt="Team" layout="fill" objectFit="cover" />
           </Box>
-          <Box sx={{ width: "50%" }}>
+          <Box sx={{ width: { xs: "100%", md: "50%" }, }}>
             <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
               Begin Your New Journey <br /> With Us
             </Typography>
