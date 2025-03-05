@@ -34,134 +34,148 @@ const WhyChooseUs: React.FC = () => {
               justifyContent: "flex-start",
               width: "100%",
               alignItems: "center",
+              my:"40px"
             }}
           >
-            <Box
-              sx={{
-                position: "relative",
-                width: { xs: "100%", md: "50%" },
-                backgroundImage: "url('/Group 43627.png')",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "546px",
-                borderRadius: "15px",
-              }}
-            >
-              <Box
-                sx={{
-                  backgroundColor: "#0575E6",
-                  position: "absolute",
-                  left: "-30px",
-                  top: "30%",
-                  p: "30px",
-                  borderRadius: "10px",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontSize: "30px",
-                    fontWeight: "600",
-                    fontFamily: "Plus Jakarta Sans",
-                    color: "#fff",
-                  }}
-                >
-                  20k+
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    fontFamily: "Plus Jakarta Sans",
-                    color: "#fff",
-                  }}
-                >
-                  People got hired
-                </Typography>
-              </Box>
-              <Box
-                sx={{
-                  backgroundColor: "#fff",
-                  position: "absolute",
-                  right: "30px",
-                  top: "30%",
-                  p: "30px",
-                  borderRadius: "10px",
-                }}
-              >
-                <Typography>Live</Typography>
-                <Typography>
-                  Gain extensive connections and <br /> opportunies for success
-                </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <Box>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        mt: "20px",
-                      }}
-                    >
-                      Join Now
-                    </Button>{" "}
-                  </Box>
-                </Box>
-                <Box>
-                  <Box
-                    sx={{
-                      position: "absolute",
-                      backgroundColor: "white",
-                      display: "flex",
-                      width: "450px",
-                      justifyContent: "space-around",
-                      borderRadius: "15px",
-                      p: "20px",
-                      boxShadow: "inherit",
-                      alignItems: "center",
-                      bottom:"-130%",
-                      right: "5%"
-                    }}
-                  >
-                    <img src="/icon5.png" alt="icon05" />
-                    <Box>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontSize: "25px",
-                          fontWeight: "500",
-                          fontFamily: "Plus Jakarta Sans",
-                        }}
-                      >
-                        UI/UX Designer
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          fontSize: "18px",
-                          fontWeight: "400",
-                          fontFamily: "Plus Jakarta Sans",
-                        }}
-                      >
-                        159 Open Position
-                      </Typography>
-                    </Box>
-                    <Button
-                      variant="outlined"
-                      sx={{
-                        mt: "20px",
-                      }}
-                    >
-                      Apply Now
-                    </Button>
-                  </Box>
-                </Box>
-              </Box>
-            </Box>
+<Box
+  sx={{
+    position: "relative",
+    width: { xs: "100%", md: "50%" },
+    backgroundImage: "url('/Group 43627.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: { xs: "400px", sm: "500px", md: "546px" }, // Adjust height for different screens
+    borderRadius: "15px",
+    display: "flex",
+    flexDirection:"column",
+    alignItems: "center",
+    gap:2,
+    justifyContent: "center",
+  }}
+>
+  {/* Left Blue Box */}
+  <Box
+    sx={{
+      backgroundColor: "#0575E6",
+      position: { xs: "static", lg: "absolute" },
+      left: { xs: "10px", sm: "20px", md: "-30px" },
+      top: "30%",
+      p: { xs: "15px", sm: "20px", md: "30px" }, // Adjust padding for responsiveness
+      borderRadius: "10px",
+      textAlign: "center",
+      width:{xs:"100%" , lg:"auto"},
+    }}
+  >
+    <Typography
+      variant="h6"
+      sx={{
+        fontSize: { xs: "20px", sm: "24px", md: "30px" },
+        fontWeight: "600",
+        fontFamily: "Plus Jakarta Sans",
+        color: "#fff",
+      }}
+    >
+      20k+
+    </Typography>
+    <Typography
+      variant="body1"
+      sx={{
+        fontSize: { xs: "14px", sm: "16px", md: "18px" },
+        fontWeight: "400",
+        fontFamily: "Plus Jakarta Sans",
+        color: "#fff",
+      }}
+    >
+      People got hired
+    </Typography>
+  </Box>
+
+  {/* Right White Box */}
+  <Box
+    sx={{
+      backgroundColor: "#fff",
+      position: { xs: "static", lg: "absolute" },
+      right: { xs: "10px", sm: "20px", md: "30px" },
+      top: "30%",
+      p: { xs: "15px", sm: "20px", md: "30px" },
+      borderRadius: "10px",
+      width:{xs:"100%" , lg:"auto"}, // Dynamic width
+      boxShadow: 1,
+    }}
+  >
+    <Typography variant="body1" sx={{ fontWeight: "600" }}>
+      Live
+    </Typography>
+    <Typography variant="body2" sx={{ fontSize: { xs: "14px", sm: "16px" } }}>
+      Gain extensive connections and <br /> opportunities for success
+    </Typography>
+    <Button
+      variant="contained"
+      sx={{
+        mt: "15px",
+      }}
+    >
+      Join Now
+    </Button>
+
+    {/* Bottom Job Card */}
+  </Box>
+  <Box
+      sx={{
+        position: { xs: "static", lg: "absolute" },
+        backgroundColor: "white",
+        display: "flex",
+        flexDirection: { xs: "column", sm: "row" }, // Stack on mobile
+        alignItems: "center",
+        justifyContent: "space-between",
+        width:{xs:"100%" , lg:"auto"},
+        borderRadius: "15px",
+        p: "20px",
+        boxShadow: 2,
+        bottom: { xs: "5%", sm: "10%", md: "10%" }, // Adjust bottom spacing for different screens
+        right: { xs: "5%", sm: "5%" },
+        textAlign: { xs: "center", sm: "left" },
+      }}
+    >
+      <img
+        src="/icon5.png"
+        alt="icon05"
+        style={{ width: "48px", height: "48px" }} // Fixed size
+      />
+      <Box sx={{ flex: 1, mx: { xs: "10px", sm: "20px" } }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontSize: { xs: "18px", sm: "22px", md: "25px" },
+            fontWeight: "500",
+            fontFamily: "Plus Jakarta Sans",
+          }}
+        >
+          UI/UX Designer
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: { xs: "14px", sm: "16px", md: "18px" },
+            fontWeight: "400",
+            fontFamily: "Plus Jakarta Sans",
+          }}
+        >
+          159 Open Positions
+        </Typography>
+      </Box>
+      <Button
+        variant="outlined"
+        sx={{
+          mt: { xs: "10px", sm: "0px" },
+        }}
+      >
+        Apply Now
+      </Button>
+    </Box>
+</Box>
+
             <Box
               sx={{
                 width: { xs: "100%", md: "50%" },
