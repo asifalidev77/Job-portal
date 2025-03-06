@@ -16,6 +16,7 @@ import CreativeJobsFeature from "./components/CreativeJobsFeature";
 import Positions from "./components/Positions";
 import GridViewIcon from "@mui/icons-material/GridView";
 import ListIcon from "@mui/icons-material/ViewList";
+import TalentSlider from "./components/Talents";
 import {
   Brush,
   Code,
@@ -27,6 +28,7 @@ import {
   Calculate,
 } from "@mui/icons-material";
 import WhyChooseUs from "./components/WhyChooseUs";
+import Testimonials from "./components/Testimonital";
 const jobList = [
   { title: "UI/UX Designer", positions: 49, icon: <Brush fontSize="large" /> },
   { title: "Programmer", positions: 159, icon: <Code fontSize="large" /> },
@@ -159,6 +161,8 @@ export default function Home() {
       </Container>
       <ExploreCompanies />
       <WhyChooseUs/>
+      <TalentSlider/>
+      <Testimonials/>
       <JoinOurTeam />
       <Footer />
     </>

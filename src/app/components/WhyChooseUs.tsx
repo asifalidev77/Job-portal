@@ -41,7 +41,7 @@ const WhyChooseUs: React.FC = () => {
   sx={{
     position: "relative",
     width: { xs: "100%", md: "50%" },
-    backgroundImage: {xs:"none", lg:"url('/Group 43627.png')",},
+    backgroundImage: {xs:"none", lg:"url('/bg1.png')",},
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
