@@ -63,7 +63,7 @@ const TalentSlider: React.FC = () => {
 
   return (
     <Box sx={{ py: 5, overflow: "hidden", maxWidth: "90%", mx: "auto" }}>
-      <Typography variant="h4" fontWeight={700} mb={3}>
+      <Typography variant="h4" fontWeight={700} mb={3} textAlign="center">
         Find The Best Talent
       </Typography>
       <Slider {...settings}>
