@@ -18,7 +18,6 @@ const steps: Step[] = [
 
 const CreativeJobsFeature: FC = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Container maxWidth="lg"> 
