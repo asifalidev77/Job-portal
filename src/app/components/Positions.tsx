@@ -50,44 +50,47 @@ const Positions: React.FC<JobCardProps> = ({
           {description}
         </Typography>
         <Button
-          variant="contained"
-          color="primary"
-          sx={{ mt: 2, width: "80%" }}
-        >
-          Apply
-        </Button>
-        <Box sx={{ display: "flex", justifyContent: "start", gap: 1, mt: 2 }}>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              mt: 1,
-              width: "40%",
-              backgroundColor: "#F0F6FF",
-              color: "#0061FF",
-              py: "15px",
-              px: "20px",
-              borderRadius: 0,
-              fontSize: "10px",
-            }}
-          >
-            {employmentType}
-          </Button>
-          <Button
-            variant="contained"
-            sx={{
-              mt: 1,
-              width: "40%",
-              backgroundColor: "#F0F6FF",
-              color: "#0061FF",
-              py: "15px",
-              px: "20px",
-              borderRadius: 0,
-              fontSize: "10px",
-            }}
-          >
-            {level}
-          </Button>
+  variant="contained"
+  color="primary"
+  sx={{
+    mt: 2,
+    width: { xs: "100%", sm: "90%", md: "80%" },
+  }}
+>
+  Apply
+</Button>
+<Box sx={{ display: "flex", justifyContent: "start", flexWrap: "wrap", gap: 1, mt: 2 }}>
+  <Button
+    variant="contained"
+    color="primary"
+    sx={{
+      mt: 1,
+      width: { xs: "100%", sm: "48%", md: "40%" },
+      backgroundColor: "#F0F6FF",
+      color: "#0061FF",
+      py: { xs: "12px", sm: "14px", md: "15px" },
+      px: { xs: "15px", sm: "18px", md: "20px" },
+      borderRadius: 0,
+      fontSize: { xs: "12px", sm: "11px", md: "10px" },
+    }}
+  >
+    {employmentType}
+  </Button>
+  <Button
+    variant="contained"
+    sx={{
+      mt: 1,
+      width: { xs: "100%", sm: "48%", md: "40%" },
+      backgroundColor: "#F0F6FF",
+      color: "#0061FF",
+      py: { xs: "12px", sm: "14px", md: "15px" },
+      px: { xs: "15px", sm: "18px", md: "20px" },
+      borderRadius: 0,
+      fontSize: { xs: "12px", sm: "11px", md: "10px" },
+    }}
+  >
+    {level}
+  </Button>
         </Box>
         <Typography variant="h6" fontWeight={600} sx={{ mt: 3 }}>
           {salary}{" "}
