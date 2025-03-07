@@ -45,7 +45,7 @@ const WhyChooseUs: React.FC = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: { xs: "400px", sm: "500px", md: "546px" }, // Adjust height for different screens
+    height: { xs: "400px", sm: "500px", md: "450px" }, // Adjust height for different screens
     borderRadius: "15px",
     display: "flex",
     flexDirection:"column",
@@ -133,7 +133,7 @@ const WhyChooseUs: React.FC = () => {
         borderRadius: "15px",
         p: "20px",
         boxShadow: 2,
-        bottom: { xs: "5%", sm: "10%", md: "10%" }, // Adjust bottom spacing for different screens
+        bottom: { xs: "5%", sm: "-10%", md: "-10%" }, // Adjust bottom spacing for different screens
         right: { xs: "5%", sm: "5%" },
         textAlign: { xs: "center", sm: "left" },
       }}
