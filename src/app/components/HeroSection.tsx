@@ -55,13 +55,34 @@ export default function HeroSection() {
                 label="Job Title or Company"
                 variant="outlined"
                 size="small"
-                sx={{ fontSize: "20px", fontWeight:"400" }}
+                sx={{ fontSize: "20px",
+                  "& .MuiInputLabel-root": {
+      fontSize: "12px", // Label (placeholder) font size
+      color: "black", // Placeholder color
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "lightgray", // Border color
+      },
+    },
+                 }}
               />
               <TextField
                 fullWidth
                 label="Select Country"
                 variant="outlined"
                 size="small"
+                sx={{ fontSize: "20px",
+                  "& .MuiInputLabel-root": {
+      fontSize: "12px", // Label (placeholder) font size
+      color: "black", // Placeholder color
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "lightgray", // Border color
+      },
+    },
+                 }}
               ></TextField>
               <Button
                 variant="contained"
