@@ -55,7 +55,7 @@ export default function HeroSection() {
                 label="Job Title or Company"
                 variant="outlined"
                 size="small"
-                sx={{ fontSize: "20px" }}
+                sx={{ fontSize: "20px", fontWeight:"400" }}
               />
               <TextField
                 fullWidth
